@@ -9,7 +9,7 @@ git clone https://github.com/tecnobert/stayhouse/
 ``
 
 ## See the webapp in production
-[https://web.stayhouse.org](web.stayhouse.org)
+[https://web.stayhouse.org](https://web.stayhouse.org)
 
 ## Features
 - Current statistics of global total confirmed, deaths, recovered cases.
