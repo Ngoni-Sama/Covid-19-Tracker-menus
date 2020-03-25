@@ -3,6 +3,7 @@
 The initiative is to help people to prevent infecting more people. It is also to show the number of cases that are occurring around the world. If you are a developer and know Dart, you can contribute to this project by cloning or forking it.
 
 To clone you use the following command:
+
 ``
 git clone https://github.com/tecnobert/stayhouse/
 ``
