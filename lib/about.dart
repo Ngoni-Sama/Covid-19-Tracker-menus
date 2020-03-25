@@ -20,7 +20,6 @@ class AboutPage extends StatelessWidget {
         description: element.license,
       ));
     });
-
     return Center(
         child: Container(
             constraints: BoxConstraints(maxWidth: 768),
