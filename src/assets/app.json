@@ -1,0 +1,13 @@
+{
+  "app": {
+    "NAME": "Stay House"
+  },
+  "urls": {
+    "routes": ["/", "/about", "/downloads", "/getting-started"],
+    "external": [
+      "https://web.stayhouse.org/",
+      "https://github.com/tecnobert/stayhouse",
+      "https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
+    ]
+  }
+}
