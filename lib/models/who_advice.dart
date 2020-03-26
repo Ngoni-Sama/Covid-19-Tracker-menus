@@ -1,5 +1,5 @@
-import 'package:StayHouse/models/who_data.dart';
-import 'package:StayHouse/models/who_topic.dart';
+import 'package:CoronaTracker/models/who_data.dart';
+import 'package:CoronaTracker/models/who_topic.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'who_advice.g.dart';

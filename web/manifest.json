@@ -1,6 +1,6 @@
 {
-    "name": "Corona Tracker",
-    "short_name": "Corona Tracker",
+    "name": "Stay House",
+    "short_name": "Stay House",
     "start_url": ".",
     "display": "minimal-ui",
     "background_color": "#0175C2",

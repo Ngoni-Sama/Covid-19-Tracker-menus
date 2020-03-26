@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:StayHouse/apis/corona_service.dart';
-import 'package:StayHouse/models/corona_case_country.dart';
+import 'package:CoronaTracker/apis/corona_service.dart';
+import 'package:CoronaTracker/models/corona_case_country.dart';
 
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'google_map_base.dart';

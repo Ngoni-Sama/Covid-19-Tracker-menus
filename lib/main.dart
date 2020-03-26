@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:StayHouse/about.dart';
-import 'package:StayHouse/advices.dart';
-import 'package:StayHouse/google_map_base.dart';
-import 'package:StayHouse/stats.dart';
+import 'package:CoronaTracker/about.dart';
+import 'package:CoronaTracker/advices.dart';
+import 'package:CoronaTracker/google_map_base.dart';
+import 'package:CoronaTracker/stats.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Stay House',
+      title: 'Corona Virus Tracker',
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         length: 4,
         child: Scaffold(
           appBar: AppBar(
-            title: Text('Stay House'),
+            title: Text('Corona Virus Tracker'),
             bottom: TabBar(
               tabs: <Widget>[
                 Tab(

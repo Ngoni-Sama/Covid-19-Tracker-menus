@@ -1,4 +1,4 @@
-import 'package:StayHouse/utils/utils.dart';
+import 'package:CoronaTracker/utils/utils.dart';
 
 class CoronaTotalCount {
   final int confirmed;

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:StayHouse/apis/corona_service.dart';
-import 'package:StayHouse/models/corona_case_country.dart';
-import 'package:StayHouse/models/corona_case_total_count.dart';
-import 'package:StayHouse/utils/utils.dart';
+import 'package:CoronaTracker/apis/corona_service.dart';
+import 'package:CoronaTracker/models/corona_case_country.dart';
+import 'package:CoronaTracker/models/corona_case_total_count.dart';
+import 'package:CoronaTracker/utils/utils.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
 
 class StatsPage extends StatefulWidget {

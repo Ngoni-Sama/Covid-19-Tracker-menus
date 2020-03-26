@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:StayHouse/advices.dart';
-import 'package:StayHouse/models/about.dart';
+import 'package:CoronaTracker/advices.dart';
+import 'package:CoronaTracker/models/about.dart';
 
 class AboutPage extends StatelessWidget {
   final About about = About.defaultAbout;
@@ -20,6 +20,7 @@ class AboutPage extends StatelessWidget {
         description: element.license,
       ));
     });
+
     return Center(
         child: Container(
             constraints: BoxConstraints(maxWidth: 768),
