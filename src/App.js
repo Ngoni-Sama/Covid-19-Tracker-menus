@@ -8,6 +8,7 @@ import React from "react";
 import Styled from "./styles/react/styles";
 import Typography from "@material-ui/core/Typography";
 import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
+import wash_hands from "./assets/img/undraw_wash_hands_nwl2.svg";
 
 function toGettingstarted() {
   window.location.href = urls.routes[3];
@@ -23,6 +24,12 @@ function App() {
         <Typography className={classes.title} variant="h3" noWrap>
           {app.NAME}
         </Typography>
+        <img
+              className={classes.svg_asset}
+              src={wash_hands}
+              alt={app.NAME}
+              srcset={wash_hands}
+            />
         <p>Get updated data about Corona Virus.</p>
         <Button variant="contained" color='secondary' onClick={toGettingstarted}>
           Getting Started <VerifiedUserIcon></VerifiedUserIcon>

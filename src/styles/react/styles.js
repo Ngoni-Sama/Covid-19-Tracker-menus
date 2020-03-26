@@ -83,7 +83,7 @@ const Styled = makeStyles(theme => ({
   posts: {
     backgroundColor: "#ffffffab",
     height: "100vh",
-    marginTop: "82px",
+    marginTop: "2px",
     boxShadow: colors.hover.$box_shandown,
     borderRadius: "6px",
     padding: 16,
@@ -117,6 +117,22 @@ const Styled = makeStyles(theme => ({
     bgNav: {
       display: "none"
     },
+    svg_asset: {
+      width: "26%",
+      marginTop: "12px",
+      marginLeft: "20.3%"
+    },
+    posts: {
+      backgroundColor: "#ffffffab",
+      height: "100vh",
+      marginTop: "42px",
+      boxShadow: colors.hover.$box_shandown,
+      borderRadius: "6px",
+      padding: 8,
+      color: colors.$secondary,
+      fontFamily: "Ubuntu",
+      fontWeight: "600"
+    },
     AppHeader: {
       minHeight: "100vh",
       display: "flex",
@@ -131,6 +147,11 @@ const Styled = makeStyles(theme => ({
     bgNav: {
       display: "none"
     },
+    svg_asset: {
+      width: "26%",
+      marginTop: "12px",
+      marginLeft: "20.3%"
+    },
     AppHeader: {
       minHeight: "100vh",
       display: "flex",
@@ -139,11 +160,38 @@ const Styled = makeStyles(theme => ({
       justifyContent: "center",
       fontSize: "calc(10px + 2vmin)",
       color: grey[50]
+    },
+    posts: {
+      backgroundColor: "#ffffffab",
+      height: "100vh",
+      marginTop: "42px",
+      boxShadow: colors.hover.$box_shandown,
+      borderRadius: "6px",
+      padding: 8,
+      color: colors.$secondary,
+      fontFamily: "Ubuntu",
+      fontWeight: "600"
     }
   },
   "@media screen and (max-width: 720px)": {
     bgNav: {
       display: "none"
+    },
+    svg_asset: {
+      width: "26%",
+      marginTop: "12px",
+      marginLeft: "20.3%"
+    },
+    posts: {
+      backgroundColor: "#ffffffab",
+      height: "100vh",
+      marginTop: "42px",
+      boxShadow: colors.hover.$box_shandown,
+      borderRadius: "6px",
+      padding: 8,
+      color: colors.$secondary,
+      fontFamily: "Ubuntu",
+      fontWeight: "600"
     },
     AppHeader: {
       minHeight: "100vh",
