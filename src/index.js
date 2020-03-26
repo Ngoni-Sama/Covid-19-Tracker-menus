@@ -1,14 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import "./styles/css/index.css";
+
+import * as serviceWorker from "./serviceWorker";
+
+import { BrowserRouter, Route, Router, Switch } from "react-router-dom";
+
+import About from "./pages/about/about";
+import App from "./App";
+import DownloadPage from './pages/downloads/downloads'
+import GettingStartedPage from './pages/Gettingstarted/getting_started';
+import React from "react";
+import ReactDOM from "react-dom";
+import { urls } from "./assets/app.json";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <BrowserRouter keyLength={22}>
+    <Switch>
+      <Route path={urls.routes[0]} exact={true} component={App} />
+      <Route path={urls.routes[1]} exact={true} component={About} />
+      <Route path={urls.routes[2]} exact={true} component={DownloadPage} />
+      <Route path={urls.routes[3]} exact={true} component={GettingStartedPage} />
+      {/*<Redirect from="/" to="/binary" />*/}
+      <Router basename="/map/5AJA3RefFuTZ8z4Gn6BjMgZRgPZ2"> </Router>
+    </Switch>
+  </BrowserRouter>,
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
