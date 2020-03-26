@@ -1,4 +1,4 @@
-import 'package:CoronaTracker/models/corona_case_total_count_features.dart';
+import 'package:StayHouse/models/corona_case_total_count_features.dart';
 import 'package:json_annotation/json_annotation.dart';
 part 'corona_case_total_count_response.g.dart';
 

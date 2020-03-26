@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:CoronaTracker/models/who_advice.dart';
-import 'package:CoronaTracker/models/who_topic.dart';
-import 'package:CoronaTracker/topic.dart';
+import 'package:StayHouse/models/who_advice.dart';
+import 'package:StayHouse/models/who_topic.dart';
+import 'package:StayHouse/topic.dart';
 
 class AdvicesPage extends StatefulWidget {
   AdvicesPage({Key key}) : super(key: key);

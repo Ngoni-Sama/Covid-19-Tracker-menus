@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:CoronaTracker/advices.dart';
-import 'package:CoronaTracker/models/who_topic.dart';
+import 'package:StayHouse/advices.dart';
+import 'package:StayHouse/models/who_topic.dart';
 
 class TopicDetailWidget extends StatelessWidget {
   final WHOTopic topic;

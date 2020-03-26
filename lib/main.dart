@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:CoronaTracker/about.dart';
-import 'package:CoronaTracker/advices.dart';
-import 'package:CoronaTracker/google_map_base.dart';
-import 'package:CoronaTracker/stats.dart';
+import 'package:StayHouse/about.dart';
+import 'package:StayHouse/advices.dart';
+import 'package:StayHouse/google_map_base.dart';
+import 'package:StayHouse/stats.dart';
 
 void main() {
   runApp(MyApp());

@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/services.dart';
-import 'package:CoronaTracker/models/corona_case.dart';
-import 'package:CoronaTracker/models/corona_case_country.dart';
-import 'package:CoronaTracker/models/corona_case_total_count.dart';
+import 'package:StayHouse/models/corona_case.dart';
+import 'package:StayHouse/models/corona_case_country.dart';
+import 'package:StayHouse/models/corona_case_total_count.dart';
 import 'package:http/http.dart' as http;
 import '../models/corona_case_response.dart';
 import '../models/corona_case_total_count_response.dart';

@@ -1,4 +1,4 @@
-package com.example.flutter_coronavirustracker
+package org.stayhouse.app
 
 import io.flutter.embedding.android.FlutterActivity
 
