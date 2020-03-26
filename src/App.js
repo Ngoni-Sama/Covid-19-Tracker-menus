@@ -1,23 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./styles/css/App.css";
+
+import { app, urls } from "./assets/app.json";
+
+import Button from "@material-ui/core/Button";
+import Nav from "./shared/nav";
+import React from "react";
+import Styled from "./styles/react/styles";
+import Typography from "@material-ui/core/Typography";
+import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
+
+function toGettingstarted() {
+  window.location.href = urls.routes[3];
+}
 
 function App() {
+  const classes = Styled();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className={classes.App}>
+      <Nav></Nav>
+      <header className={classes.AppHeader}>
+        <Typography className={classes.title} variant="h3" noWrap>
+          {app.NAME}
+        </Typography>
+        <p>Get updated data about Corona Virus.</p>
+        <Button variant="contained" color='secondary' onClick={toGettingstarted}>
+          Getting Started <VerifiedUserIcon></VerifiedUserIcon>
+        </Button>
       </header>
     </div>
   );
