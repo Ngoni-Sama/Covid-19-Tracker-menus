@@ -1,25 +1,23 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+    "name": "Stay House",
+    "short_name": "Stay House",
+    "start_url": ".",
+    "display": "minimal-ui",
+    "background_color": "#027b50",
+    "theme_color": "#027b50",
+    "description": "A Corona Virus Tracker & Advice app",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "/assets/img/logo192.svg",
+            "sizes": "192x192",
+            "type": "vetor/svg"
+        },
+        {
+            "src": "/assets/img/logo512.svg",
+            "sizes": "512x512",
+            "type": "vetor/svg"
+        }
+    ]
 }
