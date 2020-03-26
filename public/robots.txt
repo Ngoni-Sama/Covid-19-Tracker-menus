@@ -1,3 +1,8 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
+User-agent: Mediapartners-Google
 Disallow:
+User-agent: *
+
+Allow: / 
+
+Sitemap: https://stayhouse.org/sitemap.xml
+ 
