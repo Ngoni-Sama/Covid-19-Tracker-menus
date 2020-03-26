@@ -5,10 +5,11 @@
 *.swp
 .DS_Store
 .atom/
+node_modules
 .buildlog/
 .history
 .svn/
-
+.dart_tool
 # IntelliJ related
 *.iml
 *.ipr
