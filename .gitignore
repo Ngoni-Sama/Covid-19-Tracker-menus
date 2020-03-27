@@ -5,11 +5,16 @@
 *.swp
 .DS_Store
 .atom/
+node_modules
 .buildlog/
 .history
 .svn/
+<<<<<<< HEAD
 node_modules
 
+=======
+.dart_tool
+>>>>>>> 194be9e6326d83d4e8ba6faee87599a7a7d4d15c
 # IntelliJ related
 *.iml
 *.ipr
