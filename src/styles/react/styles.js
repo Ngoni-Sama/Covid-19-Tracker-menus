@@ -25,6 +25,9 @@ const Styled = makeStyles(theme => ({
     margin: 0,
     border: 0
   },
+  svg_home: {
+    width: "60px%"
+  },
   svg_asset: {
     width: "36%",
     marginTop: "22px",
@@ -83,7 +86,7 @@ const Styled = makeStyles(theme => ({
   posts: {
     backgroundColor: "#ffffffab",
     height: "100vh",
-    marginTop: "2px",
+    marginTop: "82px",
     boxShadow: colors.hover.$box_shandown,
     borderRadius: "6px",
     padding: 16,
@@ -117,15 +120,11 @@ const Styled = makeStyles(theme => ({
     bgNav: {
       display: "none"
     },
-    svg_asset: {
-      width: "26%",
-      marginTop: "12px",
-      marginLeft: "20.3%"
-    },
+
     posts: {
       backgroundColor: "#ffffffab",
       height: "100vh",
-      marginTop: "42px",
+      marginTop: "32px",
       boxShadow: colors.hover.$box_shandown,
       borderRadius: "6px",
       padding: 8,
@@ -147,11 +146,7 @@ const Styled = makeStyles(theme => ({
     bgNav: {
       display: "none"
     },
-    svg_asset: {
-      width: "26%",
-      marginTop: "12px",
-      marginLeft: "20.3%"
-    },
+
     AppHeader: {
       minHeight: "100vh",
       display: "flex",
@@ -177,11 +172,7 @@ const Styled = makeStyles(theme => ({
     bgNav: {
       display: "none"
     },
-    svg_asset: {
-      width: "26%",
-      marginTop: "12px",
-      marginLeft: "20.3%"
-    },
+
     posts: {
       backgroundColor: "#ffffffab",
       height: "100vh",
