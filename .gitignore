@@ -8,6 +8,7 @@
 .buildlog/
 .history
 .svn/
+node_modules
 
 # IntelliJ related
 *.iml
@@ -44,3 +45,4 @@ app.*.map.json
 
 # Local Netlify folder
 .netlify
+node_modules
