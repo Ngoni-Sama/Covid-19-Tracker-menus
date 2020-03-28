@@ -74,11 +74,11 @@ class _StatsPage extends State<StatsPage>
 
             final data = [
               LinearCases(CaseType.sick.index, totalCount.sick,
-                  totalCount.sickRate.toInt(), "Sick"),
+                  totalCount.sickRate.toInt(), "Doentes"),
               LinearCases(CaseType.deaths.index, totalCount.deaths,
-                  totalCount.fatalityRate.toInt(), "Deaths"),
+                  totalCount.fatalityRate.toInt(), "Mortes"),
               LinearCases(CaseType.recovered.index, totalCount.recovered,
-                  totalCount.recoveryRate.toInt(), "Recovered")
+                  totalCount.recoveryRate.toInt(), "Recuperados")
             ];
 
             final series = [
@@ -90,12 +90,12 @@ class _StatsPage extends State<StatsPage>
                     '${cases.text}\n${Utils.numberFormatter.format(cases.count)}',
                 colorFn: (cases, index) {
                   switch (cases.text) {
-                    case "Confirmed":
+                    case "Confirmados":
                       return charts.ColorUtil.fromDartColor(Colors.blue);
-                    case "Sick":
+                    case "Doentes":
                       return charts.ColorUtil.fromDartColor(
                           Colors.orangeAccent);
-                    case "Recovered":
+                    case "Recuperados":
                       return charts.ColorUtil.fromDartColor(Colors.green);
                     default:
                       return charts.ColorUtil.fromDartColor(Colors.red);
@@ -112,12 +112,12 @@ class _StatsPage extends State<StatsPage>
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                          "Last updated: ${Utils.dateFormatter.format(DateTime.now())}"),
+                          "Última atualização: ${Utils.dateFormatter.format(DateTime.now())}"),
                       Padding(
                         padding: EdgeInsets.only(bottom: 8),
                       ),
                       Text(
-                        "Global Total Cases Stats",
+                        "Total de casos no mundo",
                         style: Theme.of(context).textTheme.headline,
                       ),
                       Container(
@@ -146,7 +146,7 @@ class _StatsPage extends State<StatsPage>
                                         .headline
                                         .apply(color: Colors.blue),
                                   ),
-                                  Text("Confirmed")
+                                  Text("Confirmados")
                                 ],
                               ),
                               Column(
@@ -159,7 +159,7 @@ class _StatsPage extends State<StatsPage>
                                         .headline
                                         .apply(color: Colors.orange),
                                   ),
-                                  Text("Sick")
+                                  Text("Doentes")
                                 ],
                               )
                             ]),
@@ -179,7 +179,7 @@ class _StatsPage extends State<StatsPage>
                                           .headline
                                           .apply(color: Colors.green),
                                     ),
-                                    Text("Recovered")
+                                    Text("Recuperados")
                                   ],
                                 ),
                                 Column(
@@ -192,7 +192,7 @@ class _StatsPage extends State<StatsPage>
                                           .headline
                                           .apply(color: Colors.green),
                                     ),
-                                    Text("Recovery Rate")
+                                    Text("Taxa de recuperação")
                                   ],
                                 )
                               ])),
@@ -211,7 +211,7 @@ class _StatsPage extends State<StatsPage>
                                           .headline
                                           .apply(color: Colors.red),
                                     ),
-                                    Text("Deaths")
+                                    Text("Mortes")
                                   ],
                                 ),
                                 Column(
@@ -224,7 +224,7 @@ class _StatsPage extends State<StatsPage>
                                           .headline
                                           .apply(color: Colors.red),
                                     ),
-                                    Text("Fatality Rate")
+                                    Text("Taxa de fatalidade")
                                   ],
                                 )
                               ])),
@@ -246,13 +246,13 @@ class _StatsPage extends State<StatsPage>
           return Padding(
               padding: EdgeInsets.only(top: 16, bottom: 16),
               child: Center(
-                child: Text('Error fetching total cases global data'),
+                child: Text("Erro ao obter dados das ocorrências Globais"),
               ));
         } else {
           if (snapshot.data == null || snapshot.data.length == 0) {
             return Padding(
               padding: EdgeInsets.only(top: 16, bottom: 16),
-              child: Center(child: Text("No Data")),
+              child: Center(child: Text("Sem dados")),
             );
           }
 
@@ -264,17 +264,17 @@ class _StatsPage extends State<StatsPage>
 
           if (chinaCase != null) {
             final data = [
-              OrdinalCases("Confirmed", chinaCase.totalConfirmedCount,
+              OrdinalCases("Confirmados", chinaCase.totalConfirmedCount,
                   chinaCase.coronaTotalCount),
-              OrdinalCases("Recovered", chinaCase.totalRecoveredCount,
+              OrdinalCases("Recuperados", chinaCase.totalRecoveredCount,
                   chinaCase.coronaTotalCount),
-              OrdinalCases("Deaths", chinaCase.totalDeathsCount,
+              OrdinalCases("Mortes", chinaCase.totalDeathsCount,
                   chinaCase.coronaTotalCount),
             ];
 
             final seriesList = [
               charts.Series<OrdinalCases, String>(
-                id: 'China Cases',
+                id: 'Casos na China',
                 domainFn: (OrdinalCases cases, _) => cases.country,
                 measureFn: (OrdinalCases cases, _) => cases.total,
                 data: data,
@@ -283,9 +283,9 @@ class _StatsPage extends State<StatsPage>
                 },
                 colorFn: (cases, index) {
                   switch (cases.country) {
-                    case 'Confirmed':
+                    case 'Confirmados':
                       return charts.ColorUtil.fromDartColor(Colors.blue);
-                    case 'Recovered':
+                    case 'Recuperados':
                       return charts.ColorUtil.fromDartColor(Colors.green);
                     default:
                       return charts.ColorUtil.fromDartColor(Colors.red);
@@ -299,7 +299,7 @@ class _StatsPage extends State<StatsPage>
                 padding: EdgeInsets.only(top: 8),
               ),
               Text(
-                "Cases in Mainland China",
+                "Casos em toda China",
                 style: Theme.of(context).textTheme.headline,
               ),
               Container(
@@ -330,7 +330,7 @@ class _StatsPage extends State<StatsPage>
             var tailTexts = List<String>();
 
             if (totalCount.deaths > 0) {
-              tailTexts.add("D:${totalCount.deathsText}");
+              tailTexts.add("M:${totalCount.deathsText}");
             }
 
             if (totalCount.recovered > 0) {
@@ -359,7 +359,7 @@ class _StatsPage extends State<StatsPage>
 
           var seriesList = [
             charts.Series<OrdinalCases, String>(
-              id: 'Deaths',
+              id: 'Mortes',
               domainFn: (OrdinalCases cases, _) => cases.country,
               measureFn: (OrdinalCases cases, _) => cases.total,
               data: deathsCasesData,
@@ -370,7 +370,7 @@ class _StatsPage extends State<StatsPage>
                   charts.ColorUtil.fromDartColor(Colors.red),
             ),
             charts.Series<OrdinalCases, String>(
-              id: 'Recovered',
+              id: 'Recuperados',
               domainFn: (OrdinalCases cases, _) => cases.country,
               measureFn: (OrdinalCases cases, _) => cases.total,
               data: recoveredCasesData,
@@ -381,7 +381,7 @@ class _StatsPage extends State<StatsPage>
                   charts.ColorUtil.fromDartColor(Colors.green),
             ),
             charts.Series<OrdinalCases, String>(
-              id: 'Sick',
+              id: 'Doentes',
               domainFn: (OrdinalCases cases, _) => cases.country,
               measureFn: (OrdinalCases cases, _) => cases.total,
               data: confirmedCasesData,
@@ -398,7 +398,7 @@ class _StatsPage extends State<StatsPage>
               padding: EdgeInsets.only(top: 16),
             ),
             Text(
-              "Cases outside Mainland China",
+              "Casos fora da China",
               style: Theme.of(context).textTheme.headline,
             ),
             Container(
