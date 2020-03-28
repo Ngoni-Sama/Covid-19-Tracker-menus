@@ -24,16 +24,16 @@ class MyApp extends StatelessWidget {
             bottom: TabBar(
               tabs: <Widget>[
                 Tab(
-                  text: "Stats",
+                  text: "Estatísticas",
                 ),
                 Tab(
-                  text: "Maps",
+                  text: "Mapas",
                 ),
                 Tab(
-                  text: "Advices",
+                  text: "Avisos",
                 ),
                 Tab(
-                  text: "About",
+                  text: "Sobre",
                 ),
               ],
             ),
