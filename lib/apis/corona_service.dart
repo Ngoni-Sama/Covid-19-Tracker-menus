@@ -15,7 +15,7 @@ class TimeoutException implements Exception {
 }
 
 class ServerException implements Exception {
-  final String message = 'Server busy';
+  final String message = 'Erro interno no Servidor - Erro 500';
   ServerException();
   String toString() => message;
 }
@@ -151,7 +151,7 @@ class CoronaService {
     if (response.statusCode == 200) {
       return json.decode(response.body);
     } else {
-      throw ServerErrorException("Error retrieving data");
+      throw ServerErrorException("Erro ao receber dados");
     }
   }
 }
