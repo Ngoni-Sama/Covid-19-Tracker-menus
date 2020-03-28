@@ -10,7 +10,7 @@ class AboutPage extends StatelessWidget {
     var children = List<Widget>();
 
     children.add(SectionCardWidget(
-      title: 'About Me',
+      title: 'Sobre',
       description: about.title,
     ));
 
