@@ -55,7 +55,7 @@ class _MapsPage extends State<BrowserMapsPage>
             );
           } else if (snapshot.error != null) {
             return Center(
-              child: Text('An error has occured'),
+              child: Text('Um erro ocorreu'),
             );
           } else {
             final List<CoronaCaseCountry> cases = snapshot.data;
