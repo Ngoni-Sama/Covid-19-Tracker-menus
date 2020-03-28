@@ -45,7 +45,7 @@ class _AdvicesPage extends State<AdvicesPage> {
           );
         } else if (snapshot.error != null) {
           return Center(
-            child: Text('An error has occured'),
+            child: Text('Um erro ocorreu'),
           );
         } else {
           final WHOAdvice advice = snapshot.data;
