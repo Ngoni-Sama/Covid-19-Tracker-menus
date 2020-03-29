@@ -94,7 +94,7 @@ class _MapsPage extends State<MobileMapsPage>
             return GoogleMap(
               onMapCreated: _onMapCreated,
               initialCameraPosition: CameraPosition(
-                target: const LatLng(30.5833, 114.26667),
+                target: const LatLng(-15.721387, -48.0774459),
                 zoom: 5,
               ),
               markers: _markers.values.toSet(),
