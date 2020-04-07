@@ -1,16 +1,16 @@
-import "../../styles/css/App.css";
+import "../../../styles/css/App.css";
 
-import { app, urls } from "../../assets/app.json";
+import { app, urls } from "../../../assets/app.json";
 
 import Button from "@material-ui/core/Button";
 import Container from "@material-ui/core/Container";
 import GitHub from "@material-ui/icons/GitHub";
 import Nav from "../../shared/nav";
 import React from "react";
-import Styled from "../../styles/react/styles";
+import Styled from "../../../styles/react/styles";
 import Typography from "@material-ui/core/Typography";
 import WhoIntBtn from '../../shared/whoInt';
-import wash_hands from "../../assets/img/undraw_wash_hands_nwl2.svg";
+import wash_hands from "../../../assets/img/undraw_wash_hands_nwl2.svg";
 
 function AboutPage() {
   const classes = Styled();

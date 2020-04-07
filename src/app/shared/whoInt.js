@@ -1,7 +1,7 @@
 import Button from "@material-ui/core/Button";
 import LiveHelpIcon from "@material-ui/icons/LiveHelp";
 import React from "react";
-import { urls } from "../assets/app.json";
+import { urls } from "../../assets/app.json";
 
 //import Styled from "../../styles/react/styles";
 

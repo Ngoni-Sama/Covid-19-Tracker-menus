@@ -1,13 +1,16 @@
+import "../../../styles/css/App.css";
+
 import Container from "@material-ui/core/Container";
-import DownloadBtn from "./downloadBtn";
+import DownloadBtn from "../../pages/downloads/downloadBtn";
 import Nav from "../../shared/nav";
 import React from "react";
-import Styled from "../../styles/react/styles";
+import Styled from "../../../styles/react/styles";
 import Typography from "@material-ui/core/Typography";
-import { app } from "../../assets/app.json";
-import medical_research from "../../assets/img/undraw_medical_research_qg4d.svg";
+import WhoIntBtn from "../../shared/whoInt";
+import { app } from "../../../assets/app.json";
+import social_distancing from "../../../assets/img/undraw_social_distancing_2g0u.svg";
 
-function DownloadPage() {
+function GettingStartedPage() {
   const classes = Styled();
 
   return (
@@ -18,16 +21,18 @@ function DownloadPage() {
           <Typography className={classes.posts} component="div">
             <img
               className={classes.svg_asset}
-              src={medical_research}
+              src={social_distancing}
               alt={app.NAME}
-              srcset={medical_research}
+              srcset={social_distancing}
             />
 
             <p>
-              We are working to make available a version of the application for
-              Android and IOS. Very soon it will be in the app stores.
+              Coronavirus disease spreads primarily through contact with an
+              infected person when they cough or sneeze. It also spreads when a
+              person touches a surface or object that has the virus on it, then
+              touches their eyes, nose, or mouth.
             </p>
-
+            <WhoIntBtn></WhoIntBtn>
             <p>
               You can use the application in the Web version. For now it is only
               available for the Web. The mobile version for Android and IOS will
@@ -41,4 +46,4 @@ function DownloadPage() {
   );
 }
 
-export default DownloadPage;
+export default GettingStartedPage;

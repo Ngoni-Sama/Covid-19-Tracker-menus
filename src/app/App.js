@@ -1,21 +1,19 @@
-import "./styles/css/App.css";
+import "../styles/css/App.css";
 
-import { app, urls } from "./assets/app.json";
+import { app, urls } from "../assets/app.json";
 
 import Button from "@material-ui/core/Button";
 import Nav from "./shared/nav";
 import React from "react";
-import Styled from "./styles/react/styles";
+import Styled from "../styles/react/styles";
 import Typography from "@material-ui/core/Typography";
 import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
 
-function toGettingstarted() {
-  window.location.href = urls.routes[3];
-}
-
 function App() {
   const classes = Styled();
-
+  function toGettingstarted() {
+    window.location.href = urls.routes[3];
+  }
   return (
     <div className={classes.App}>
       <Nav></Nav>
